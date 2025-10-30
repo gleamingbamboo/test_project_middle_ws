@@ -1,7 +1,7 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
-from connection_manager import active_connections
-from logger import logger
+from app.connection_manager import active_connections
+from app.logger import logger
 
 ws_router = APIRouter()
 

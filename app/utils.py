@@ -2,8 +2,8 @@ import asyncio
 import signal
 from datetime import datetime
 
-from logger import logger
-from tasks import wait_for_shutdown
+from app.logger import logger
+from app.tasks import wait_for_shutdown
 
 shutdown_initiated_at: datetime | None = None
 

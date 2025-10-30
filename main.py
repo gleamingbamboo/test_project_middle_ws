@@ -2,11 +2,11 @@ import asyncio
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from events import shutdown_event
-from logger import logger
-from router import ws_router
-from tasks import periodic_notifications
-from utils import setup_signal_handlers
+from app.events import shutdown_event
+from app.logger import logger
+from app.router import ws_router
+from app.tasks import periodic_notifications
+from app.utils import setup_signal_handlers
 
 app = FastAPI(title="FastAPI WebSocket Server with Graceful Shutdown")
 

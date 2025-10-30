@@ -1,9 +1,9 @@
 import asyncio
 from datetime import datetime, timedelta
 
-from connection_manager import active_connections
-from events import shutdown_event
-from logger import logger
+from app.connection_manager import active_connections
+from app.events import shutdown_event
+from app.logger import logger
 
 GRACEFUL_SHUTDOWN_TIMEOUT = 30 * 60  # 30 minutes
 
